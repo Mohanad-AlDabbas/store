@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> jersey store</title>
+    <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   </head>
+<body>
+  <nav>
+    <div class="menu">
+      <div class="logo">
+        <a href="#">jersey store</a>
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Feedback</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="img"></div>
+  <div class="center">
+    <div class="title">my first wep</div>
+    <div class="btns">
+      <button>Learn More</button>
+      <button>Subscribe</button>
+    </div>
+  </div>
+  
+<button class="open-button" onclick="openForm()">Open Form</button>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+</body>
+
+</html>
