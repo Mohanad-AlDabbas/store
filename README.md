@@ -1,2 +1,2 @@
-# legend
-legend website
+# store
+store website
